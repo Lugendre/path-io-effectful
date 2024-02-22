@@ -31,10 +31,11 @@ dependencies:
 - effectful-core
 - effectful-plugin
 - effectful-th
-- safe-exceptions
-- time
 - path
 - path-io
+- safe-exceptions
+- time
+- unliftio
 
 ghc-options:
 - -Wall

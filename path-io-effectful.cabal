@@ -30,6 +30,7 @@ library
       Effectful.FileSystem.Path.IO.ByteString
       Effectful.FileSystem.Path.IO.ByteString.Builder
       Effectful.FileSystem.Path.IO.ByteString.Lazy
+      Effectful.FileSystem.Path.IO.File
   other-modules:
       Paths_path_io_effectful
   autogen-modules:
@@ -57,6 +58,7 @@ library
     , path-io
     , safe-exceptions
     , time
+    , unliftio
   default-language: GHC2021
 
 executable path-io-effectful
@@ -90,6 +92,7 @@ executable path-io-effectful
     , path-io-effectful
     , safe-exceptions
     , time
+    , unliftio
   default-language: GHC2021
 
 test-suite path-io-effectful-test
@@ -125,4 +128,5 @@ test-suite path-io-effectful-test
     , path-io-effectful
     , safe-exceptions
     , time
+    , unliftio
   default-language: GHC2021

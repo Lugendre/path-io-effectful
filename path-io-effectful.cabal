@@ -31,6 +31,7 @@ library
       Effectful.FileSystem.Path.IO.ByteString.Builder
       Effectful.FileSystem.Path.IO.ByteString.Lazy
       Effectful.FileSystem.Path.IO.File
+      Effectful.Temporary.Path.IO
   other-modules:
       Paths_path_io_effectful
   autogen-modules:

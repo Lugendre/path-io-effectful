@@ -25,6 +25,7 @@ language: GHC2021
 
 dependencies:
 - base >= 4.11 && < 10
+- bytestring
 - directory
 - effectful
 - effectful-core

@@ -27,6 +27,9 @@ source-repository head
 library
   exposed-modules:
       Effectful.FileSystem.Path.IO
+      Effectful.FileSystem.Path.IO.ByteString
+      Effectful.FileSystem.Path.IO.ByteString.Builder
+      Effectful.FileSystem.Path.IO.ByteString.Lazy
   other-modules:
       Paths_path_io_effectful
   autogen-modules:
@@ -44,6 +47,7 @@ library
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       base >=4.11 && <10
+    , bytestring
     , directory
     , effectful
     , effectful-core
@@ -74,6 +78,7 @@ executable path-io-effectful
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.11 && <10
+    , bytestring
     , directory
     , effectful
     , effectful-core
@@ -108,6 +113,7 @@ test-suite path-io-effectful-test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.11 && <10
+    , bytestring
     , directory
     , effectful
     , effectful-core
